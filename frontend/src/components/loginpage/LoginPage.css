@@ -1,0 +1,214 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #0c7ef0; /* Change background color */
+  height: 70px; /* Adjust height of the navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  padding: 0 2rem; /* Add padding to the navbar */
+  width: 100%; /* Ensure the navbar spans the entire width */
+  position: fixed; /* Fix the navbar at the top */
+  top: 0;
+  z-index: 1000; /* Ensure the navbar is above other elements */
+}
+
+.navbar-logo {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  height: 70px; /* Match the height of navbar */
+}
+
+.nav-links {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links:hover {
+  border-bottom: 4px solid #fff;
+  transition: all 0.2s ease-out;
+}
+
+@media screen and (max-width: 960px) {
+  .navbar {
+    height: auto;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-item {
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    border: none;
+  }
+
+  .menu-icon {
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+}
+
+/* Login Page styles */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  margin-top: 120px; /* Add margin to account for the navbar height */
+  margin-left: 33%;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.login-underline {
+  width: 50px;
+  height: 4px;
+  background-color: #007BFF;
+  margin: 10px auto;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.login-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+.login-input {
+  width: 100%;
+  max-width: 300px;
+}
+
+.login-input input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.login-input input:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.login-forgot-password {
+  text-align: right;
+  font-size: 14px;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.login-forgot-password span {
+  color: #007BFF;
+  cursor: pointer;
+}
+
+.login-submit-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.login-submit {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.login-submit:hover {
+  background-color: #0056b3;
+}
+
+.login-submit.login-gray {
+  background-color: gray;
+}
+
+.login-submit.login-gray:hover {
+  background-color: rgba(128, 128, 128, 0.507);
+}

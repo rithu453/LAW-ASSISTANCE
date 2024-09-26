@@ -1,0 +1,48 @@
+/* FamilyCard.css */
+
+.famContainer {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.famTitle {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.famSubtitle {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.famCard {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.famCard p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  
+}
+.famCard:hover {
+  transform: scale(1); /* Slightly increase the size of the container */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+
+.famCard p::first-letter {
+  font-size: 1.2em;
+  font-weight: bold;
+}

@@ -1,0 +1,17 @@
+steps:
+1--run the frontend..
+cd frontend
+npm start
+
+
+2--for authentication.
+cd backend
+npm start
+
+3--for sessions of chatbot.
+cd backend server.js
+node server.js / nodemon server.js
+
+4--for webscarpping 
+python main.py
+

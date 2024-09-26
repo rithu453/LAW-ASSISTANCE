@@ -1,0 +1,40 @@
+/* src/pages/EmploymentContracts.css */
+
+.employmentContractsContainer {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.employmentContractsTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.employmentContractsSubtitle {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.employmentContractsText {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.employmentContractsList {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 1rem;
+}
+
+.employmentContractsList li {
+    margin-bottom: 0.5rem;
+}

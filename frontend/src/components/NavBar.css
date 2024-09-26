@@ -1,0 +1,138 @@
+/* Basic navbar styles */
+.navbar {
+  background-color: #0c7ef0; /* Background color */
+  height: 65px; /* Adjust height of the navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  /* margin-bottom: 5rem; */
+  /* Remove fixed positioning */
+}
+.top{
+  margin-bottom: 5%;
+
+}
+
+/* Adjustments for navbar brand */
+.navbar-brand {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+.navbar-brand:hover {
+  color: #f0f0f0; /* Slightly lighter color on hover */
+}
+
+/* Navbar toggler styles */
+.navbar-toggler {
+  border: none;
+  background: transparent;
+  color: #fff; /* Color for the toggler icon */
+}
+
+/* Align navigation links to the right */
+.navbar-collapse {
+  display: flex;
+  flex-grow: 1; /* Allows items to take up remaining space */
+  justify-content: flex-end; /* Align nav items to the right */
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 1rem; /* Space between items */
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transitions */
+}
+
+.nav-link:hover {
+  color: #f0f0f0; /* Lighter color on hover */
+  border-bottom: 3px solid #fff; /* Highlighted underline */
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  display: none; /* Initially hidden */
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 8px 16px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #007bff;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block; /* Show the dropdown menu when hovering over the parent */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 960px) {
+  .navbar {
+    height: auto;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin: 0.5rem 0; /* Space between items in mobile view */
+  }
+
+  .nav-link {
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .nav-link:hover {
+    border: none;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+}

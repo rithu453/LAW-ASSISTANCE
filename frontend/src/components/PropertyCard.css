@@ -1,0 +1,49 @@
+
+body {
+
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+.propertyContainer {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.propertyTitle {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.propertySubtitle {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.propertyText {
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: left;
+  color: #555;
+  line-height: 1.6;
+}
+.propertyText:hover {
+  transform: scale(1); /* Slightly increase the size of the container */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+
+.propertyText::first-letter {
+  font-size: 1.2em;
+  font-weight: bold;
+}

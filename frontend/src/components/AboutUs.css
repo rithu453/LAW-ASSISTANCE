@@ -1,0 +1,40 @@
+.about-us-page {
+    margin-top: 5%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .about-us-page h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+  }
+  
+  .about-us-page h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+
+  }
+  
+  .about-us-page p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .about-us-page ul {
+    list-style-type: disc;
+    margin-bottom: 15px;
+    padding-left: 20px;
+  }
+  
+  .about-us-page li {
+    margin-bottom: 10px;
+  }
+  
+  .about-us-page strong {
+    font-weight: bold;
+  }
+  
