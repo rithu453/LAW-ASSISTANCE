@@ -4,6 +4,9 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './LoginPage.css'; // Import your custom CSS file
 import { Link } from 'react-router-dom';
+const API_URL = import.meta.env.VITE_API_URL;
+
+
 
 const LoginPage = () => {
   const [email, setemail] = useState('');
@@ -26,11 +29,11 @@ const LoginPage = () => {
   //     setError(error.response?.data?.message || 'Registration failed.');
   //   }
   // };
-
+  
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/signin', {
+      const response = await axios.post(`${API_URL}/signin`, {
         email,
         password,
       });
