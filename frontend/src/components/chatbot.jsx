@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './chatbot.css';
 import axios from 'axios';
+const API_URL = import.meta.env.VITE_API_URL;
 
 const Chatbot = () => {
   const [sessions, setSessions] = useState([]);
@@ -22,7 +23,7 @@ const Chatbot = () => {
   const startNewSession = async () => {
     try {
       console.log('Starting new session...');
-      const response = await axios.post('http://localhost:3004/api/sessions', { sessionId: `session-${Date.now()}` });
+      const response = await axios.post(`${API_URL}/sessions`, { sessionId: `session-${Date.now()}` });
       const newSession = response.data;
       console.log('New session created:', newSession);
       const updatedSessions = [newSession, ...sessions];
