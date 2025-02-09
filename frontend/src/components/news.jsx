@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
+const API_URL = import.meta.env.VITE_API_URL;
 
 const News = () => {
     const [headlines, setHeadlines] = useState([]);
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch('http://127.0.0.1:5000/news')
+        fetch('${API_URL}/news')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
