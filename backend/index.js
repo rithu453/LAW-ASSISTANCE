@@ -57,6 +57,11 @@ app.use((req, res, next) => {
     next();
 });
 
+// **✅ Root route to prevent "Cannot GET /" error**
+app.get('/', (req, res) => {
+    res.send("🚀 API is running! Use /api for endpoints.");
+});
+
 // Routes
 app.use('/api', sessionRoutes);
 app.use('/api', allroutes);
