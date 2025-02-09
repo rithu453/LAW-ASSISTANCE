@@ -21,3 +21,4 @@ app.use('/api', sessionRoutes);
 app.listen(port, () => {
   console.log(`Server running on http://localhost:3004`);
 });
+module.export=app;
